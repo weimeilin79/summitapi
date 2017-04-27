@@ -75,11 +75,36 @@
                     {
                         "name": "acctid",
                         "in": "path",
-                        "description": "",
+                        "description": "Account ID",
                         "required": true,
                         "type": "string"
+                    },
+                    {
+                        "name": "moneysource",
+                        "in": "query",
+                        "description": "The source of money where the account is",
+                        "type": "string"
+                    },
+                    {
+                        "name": "API_KEY",
+                        "in": "formData",
+                        "description": "3scale key"
                     }
                 ],
+                "responses": {
+                    "200": {
+                        "description": "Account profile retrieved ",
+                        "schema": {
+                            "$ref": "#/definitions/Profile"
+                        }
+                    },
+                    "404": {
+                        "description": "Account not found"
+                    },
+                    "503": {
+                        "description": "Service Unavailable"
+                    }
+                },
                 "x-camelContextId": "camelContext-a73e7fe1-456e-4e15-9926-fae906325f11",
                 "x-routeId": "route2"
             }
@@ -90,6 +115,31 @@
                     "sourcegateway"
                 ],
                 "description": "Transfer money between sender and receiver account",
+                "parameters": [
+                    {
+                        "name": "acctid",
+                        "in": "formData",
+                        "description": "Account ID",
+                        "type": "string"
+                    },
+                    {
+                        "name": "recepid",
+                        "in": "formData",
+                        "description": "Receiving ID",
+                        "type": "string"
+                    },
+                    {
+                        "name": "amt",
+                        "in": "formData",
+                        "description": "Amount of money to transfer",
+                        "type": "string"
+                    },
+                    {
+                        "name": "moneysource",
+                        "in": "query",
+                        "description": "The source of money where the account is"
+                    }
+                ],
                 "x-camelContextId": "camelContext-a73e7fe1-456e-4e15-9926-fae906325f11",
                 "x-routeId": "route3"
             }
