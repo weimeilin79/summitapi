@@ -30,7 +30,7 @@
                     {
                         "name": "acctid",
                         "in": "path",
-                        "description": "",
+                        "description": "Account id",
                         "required": true,
                         "type": "string"
                     },
