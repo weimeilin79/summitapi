@@ -20,11 +20,14 @@
           {
             "name": "acctid",
             "in": "path",
-            "description": "",
+            "description": "Get account Balance",
             "required": true,
             "type": "string"
           }
         ],
+        "responses": {
+          "200": {}
+        },
         "x-camelContextId": "camelContext-a73e7fe1-456e-4e15-9926-fae906325f11",
         "x-routeId": "route1"
       }
@@ -38,11 +41,14 @@
           {
             "name": "acctid",
             "in": "path",
-            "description": "",
+            "description": "Get account profile",
             "required": true,
             "type": "string"
           }
         ],
+        "responses": {
+          "200": {}
+        },
         "x-camelContextId": "camelContext-a73e7fe1-456e-4e15-9926-fae906325f11",
         "x-routeId": "route2"
       }
@@ -52,6 +58,18 @@
         "tags": [
           "sourcegateway"
         ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {}
+        },
         "x-camelContextId": "camelContext-a73e7fe1-456e-4e15-9926-fae906325f11",
         "x-routeId": "route3"
       }
@@ -61,6 +79,18 @@
         "tags": [
           "sourcegateway"
         ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {}
+        },
         "x-camelContextId": "camelContext-a73e7fe1-456e-4e15-9926-fae906325f11",
         "x-routeId": "route4"
       }
