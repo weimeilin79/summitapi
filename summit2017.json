@@ -16,11 +16,12 @@
           "sourcegateway"
         ],
         "summary": "Account Balance",
+        "description": "Get account Balance",
         "parameters": [
           {
             "name": "acctid",
             "in": "path",
-            "description": "Get account Balance",
+            "description": "Account Id",
             "required": true,
             "type": "string"
           }
@@ -37,11 +38,13 @@
         "tags": [
           "sourcegateway"
         ],
+        "summary": "Get account profile",
+        "description": "Get account profile",
         "parameters": [
           {
             "name": "acctid",
             "in": "path",
-            "description": "Get account profile",
+            "description": "Account Id",
             "required": true,
             "type": "string"
           }
@@ -58,6 +61,7 @@
         "tags": [
           "sourcegateway"
         ],
+        "description": "Do Transfer",
         "parameters": [
           {
             "name": "body",
@@ -79,6 +83,7 @@
         "tags": [
           "sourcegateway"
         ],
+        "description": "Do Transfer",
         "parameters": [
           {
             "name": "body",
