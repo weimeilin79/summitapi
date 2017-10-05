@@ -1,0 +1,278 @@
+{
+	"id": "1299a492-379f-df02-c9b4-8d017ebf10bc",
+	"name": "FIS Banking",
+	"order": [],
+	"folders": [
+		{
+			"id": "29943d83-6494-5b6d-a0c4-9d1755cf832b",
+			"name": "sourcegateway",
+			"description": "Folder for sourcegateway",
+			"order": [
+				"bfe2a399-45a2-e9b6-82b0-922a03bb18ca",
+				"18fef9ce-74ae-6e76-2f08-5609559ab043",
+				"b719d3e3-6402-7799-c3e6-a245dea80f2b",
+				"82cff898-faae-e20c-626d-8b34f3088081"
+			],
+			"owner": 0,
+			"collectionId": "1299a492-379f-df02-c9b4-8d017ebf10bc",
+			"folders_order": []
+		}
+	],
+	"timestamp": 1413302258635,
+	"owner": 0,
+	"folders_order": [],
+	"hasRequests": true,
+	"requests": [
+		{
+			"id": "18fef9ce-74ae-6e76-2f08-5609559ab043",
+			"headers": "",
+			"headerData": [],
+			"url": "http://apicast-fisdemoprod.apps.mkt2go.com/demos/sourcegateway/profile/:acctid?user_key={{user_key}}",
+			"folder": "29943d83-6494-5b6d-a0c4-9d1755cf832b",
+			"queryParams": [
+				{
+					"key": "user_key",
+					"value": "{{user_key}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": "",
+			"pathVariables": {
+				"acctid": "{{acctid}}"
+			},
+			"pathVariableData": [
+				{
+					"description": "",
+					"key": "acctid",
+					"value": "{{acctid}}"
+				}
+			],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1507216727855,
+			"name": "Profile",
+			"description": "Account Profile",
+			"collectionId": "1299a492-379f-df02-c9b4-8d017ebf10bc",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": 0,
+					"headers": [],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":123456,\"acctname\":\"Simon C\",\"balance\":5000,\"ssn\":987655663,\"phone\":7264947276,\"addr\":\"43 SLIVER EAGLE ST, RIVER\",\"state\":\"MA\"}",
+					"language": "json",
+					"rawDataType": "",
+					"previewType": "parsed",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "Profile",
+					"id": "d11e2db3-2bcb-82c8-4ae0-e0437b001214",
+					"isSample": true,
+					"scrollToResult": false,
+					"runTests": false,
+					"request": {
+						"url": "http://apicast-fisdemoprod.apps.mkt2go.com/demos/sourcegateway/profile/:acctid?user_key={{user_key}}",
+						"pathVariables": {
+							"acctid": "{{acctid}}"
+						},
+						"pathVariableData": [
+							{
+								"description": "",
+								"key": "acctid",
+								"value": "{{acctid}}"
+							}
+						],
+						"queryParams": [
+							{
+								"key": "user_key",
+								"value": "{{user_key}}",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headerData": [
+							{
+								"key": "acctid",
+								"value": "123456",
+								"enabled": true,
+								"description": ""
+							},
+							{
+								"key": "user_key",
+								"value": "322904a625e454d453f456471123c878",
+								"enabled": true,
+								"description": ""
+							}
+						],
+						"headers": "acctid: 123456\nuser_key: 322904a625e454d453f456471123c878\n",
+						"data": [],
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			]
+		},
+		{
+			"id": "82cff898-faae-e20c-626d-8b34f3088081",
+			"headers": "",
+			"url": "http://apicast-fisdemoprod.apps.mkt2go.com/demos/sourcegateway/transferwithjson",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"description": "Transfer between account with JSON",
+			"descriptionFormat": "html",
+			"time": 1507214571084,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "1299a492-379f-df02-c9b4-8d017ebf10bc",
+			"name": "Account Transfer - JSON",
+			"collection_id": "1299a492-379f-df02-c9b4-8d017ebf10bc",
+			"folder": "29943d83-6494-5b6d-a0c4-9d1755cf832b"
+		},
+		{
+			"id": "b719d3e3-6402-7799-c3e6-a245dea80f2b",
+			"headers": "",
+			"url": "http://apicast-fisdemoprod.apps.mkt2go.com/demos/sourcegateway/transfer",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [],
+			"rawModeData": null,
+			"dataMode": "params",
+			"description": "Transfer money between accounts",
+			"descriptionFormat": "html",
+			"time": 1507214571084,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "1299a492-379f-df02-c9b4-8d017ebf10bc",
+			"name": "Account Transfer",
+			"collection_id": "1299a492-379f-df02-c9b4-8d017ebf10bc",
+			"folder": "29943d83-6494-5b6d-a0c4-9d1755cf832b"
+		},
+		{
+			"id": "bfe2a399-45a2-e9b6-82b0-922a03bb18ca",
+			"headers": "",
+			"headerData": [],
+			"url": "http://apicast-fisdemoprod.apps.mkt2go.com/demos/sourcegateway/balance/:acctid?user_key={{user_key}}",
+			"folder": "29943d83-6494-5b6d-a0c4-9d1755cf832b",
+			"queryParams": [
+				{
+					"key": "user_key",
+					"value": "{{user_key}}",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": "",
+			"pathVariables": {
+				"acctid": "{{acctid}}"
+			},
+			"pathVariableData": [
+				{
+					"description": "",
+					"key": "acctid",
+					"value": "{{acctid}}"
+				}
+			],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Body is correct\"] = responseBody === \"Account 123456 has balance of :5000\";",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1507216794728,
+			"name": "Account Balance",
+			"description": "Get Account Balance",
+			"collectionId": "1299a492-379f-df02-c9b4-8d017ebf10bc",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": 0,
+					"headers": [],
+					"cookies": [],
+					"mime": "",
+					"text": "\"Account 123456 has balance of :5000\"",
+					"language": "text",
+					"rawDataType": "",
+					"previewType": "parsed",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"id": "3dbdda6d-82b7-fc44-afb9-84fc200653fb",
+					"name": "Account Balance",
+					"isSample": true,
+					"scrollToResult": false,
+					"runTests": false,
+					"request": {
+						"url": "http://apicast-fisdemoprod.apps.mkt2go.com/demos/sourcegateway/balance/:acctid?user_key={{user_key}}",
+						"pathVariables": {
+							"acctid": "{{acctid}}"
+						},
+						"pathVariableData": [
+							{
+								"description": "",
+								"key": "acctid",
+								"value": "{{acctid}}"
+							}
+						],
+						"queryParams": [
+							{
+								"key": "user_key",
+								"value": "{{user_key}}",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headerData": [
+							{
+								"key": "acctid",
+								"value": "123456",
+								"enabled": true,
+								"description": ""
+							},
+							{
+								"key": "user_key",
+								"value": "322904a625e454d453f456471123c878",
+								"enabled": true,
+								"description": ""
+							}
+						],
+						"headers": "acctid: 123456\nuser_key: 322904a625e454d453f456471123c878\n",
+						"data": [],
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			]
+		}
+	]
+}
