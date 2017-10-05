@@ -65,7 +65,10 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/accountprofile"
+            }
           }
         },
         "x-camelContextId": "camelContext-a73e7fe1-456e-4e15-9926-fae906325f11",
@@ -81,7 +84,10 @@
         "description": "Transfer money between accounts",
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/accountprofile"
+            }
           }
         },
         "x-camelContextId": "camelContext-a73e7fe1-456e-4e15-9926-fae906325f11",
@@ -95,9 +101,21 @@
         ],
         "summary": "Account Transfer - JSON",
         "description": "Transfer between account with JSON",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/accountprofile"
+            }
+          }
+        ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/accountprofile"
+            }
           }
         },
         "x-camelContextId": "camelContext-a73e7fe1-456e-4e15-9926-fae906325f11",
