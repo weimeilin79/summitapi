@@ -109,5 +109,39 @@
     {
       "name": "sourcegateway"
     }
-  ]
+  ],
+  "definitions": {
+    "accountprofile": {
+      "title": "Root Type for accountprofile",
+      "description": "The root of the accountprofile type's schema.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "acctname": {
+          "type": "string"
+        },
+        "balance": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ssn": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "phone": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "addr": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        }
+      }
+    }
+  }
 }
